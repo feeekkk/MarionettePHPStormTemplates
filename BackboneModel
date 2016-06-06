@@ -1,0 +1,15 @@
+define([
+	'backbone'
+], function(
+	Backbone
+) {
+	var ${NAME} = Backbone.Model.extend({
+		urlRoot: '/api/',
+
+		defaults: {
+
+		}
+	});
+
+	return ${NAME};
+});

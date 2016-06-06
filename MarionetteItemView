@@ -1,0 +1,39 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+define([
+	'marionette',
+	'tpl!templates/${NAME}.html'
+], function(
+	Mn,
+	tpl
+) {
+	var ${NAME} = Mn.ItemView.extend({
+		template: tpl,
+
+		templateHelpers: function() {
+			return {
+
+			}
+		},
+
+        /*
+		behaviors: {
+			Modal: {
+				behaviorClass: Modal
+			},
+		},
+		*/
+
+		events: {
+		},
+
+		ui: {
+		},
+
+		initialize: function(options) {
+		}
+	});
+
+	return ${NAME};
+});

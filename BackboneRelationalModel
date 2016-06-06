@@ -1,0 +1,30 @@
+define([
+	'backbone',
+	'backboneRelational'
+], function(
+	Backbone
+) {
+	var ${NAME} = Backbone.RelationalModel.extend({
+		urlRoot: '/api/',
+
+		relations: [
+		    {
+		        type: Backbone.HasOne,
+				key: '',
+				relatedModel: ,
+				includeInJSON: true,
+				reverseRelation: {
+					key: '',
+					includeInJSON: true,
+					type: Backbone.HasOne
+				}
+		    }
+		],
+
+		defaults: {
+
+		}
+	});
+
+	return ${NAME};
+});
